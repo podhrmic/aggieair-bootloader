@@ -3,6 +3,9 @@
 *.ko
 *.obj
 *.elf
+*.d
+*.list
+*.srec
 
 # Precompiled Headers
 *.gch
@@ -27,6 +30,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
 
 # Eclipse project files
 .cproject
@@ -35,3 +39,44 @@
 
 # Gedit TMP files
 *~
+
+# Some generated headers
+include/libopencm3/efm32/efm32g/nvic.h
+include/libopencm3/efm32/efm32gg/nvic.h
+include/libopencm3/efm32/efm32lg/nvic.h
+include/libopencm3/efm32/efm32tg/nvic.h
+include/libopencm3/lm3s/nvic.h
+include/libopencm3/lpc13xx/nvic.h
+include/libopencm3/lpc17xx/nvic.h
+include/libopencm3/lpc43xx/nvic.h
+include/libopencm3/stm32/f1/nvic.h
+include/libopencm3/stm32/f2/nvic.h
+include/libopencm3/stm32/f4/nvic.h
+include/libopencm3/stm32/l1/nvic.h
+lib/efm32/efm32g/vector_nvic.c
+lib/efm32/efm32gg/vector_nvic.c
+lib/efm32/efm32lg/vector_nvic.c
+lib/efm32/efm32tg/vector_nvic.c
+lib/libopencm3_efm32g.ld
+lib/libopencm3_efm32gg.ld
+lib/libopencm3_efm32lg.ld
+lib/libopencm3_efm32tg.ld
+lib/libopencm3_lm3s.ld
+lib/libopencm3_lm4f.ld
+lib/libopencm3_lpc13xx.ld
+lib/libopencm3_lpc17xx.ld
+lib/libopencm3_lpc43xx.ld
+lib/libopencm3_lpc43xx_rom_to_ram.ld
+lib/libopencm3_stm32f1.ld
+lib/libopencm3_stm32f2.ld
+lib/libopencm3_stm32f4.ld
+lib/libopencm3_stm32l1.ld
+lib/lm3s/vector_nvic.c
+lib/lpc13xx/vector_nvic.c
+lib/lpc17xx/vector_nvic.c
+lib/lpc43xx/vector_nvic.c
+lib/stm32/f1/vector_nvic.c
+lib/stm32/f2/vector_nvic.c
+lib/stm32/f4/vector_nvic.c
+lib/stm32/l1/vector_nvic.c
+
