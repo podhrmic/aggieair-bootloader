@@ -15,7 +15,7 @@ Voila, then you can flash code on your autopilot via DFU!
 ## Using arm-none-eabi-gdb
 ```make
 cd examples/stm32/f4/krooz/usb_dfu
-arm-none-eabi-gdb usbdfu.bin
+arm-none-eabi-gdb usbdfu.elf
 target extended-remote /dev/ttyACM0
 monitor swdp_scan
 attach 1
