@@ -62,7 +62,7 @@ u8 sector_num = 1;
 
 static enum dfu_state usbdfu_state = STATE_DFU_IDLE;
 
-inline char *get_dev_unique_id(char *serial_no);
+static inline char *get_dev_unique_id(char *serial_no);
 void led_set(int id, int on);
 static inline void led_advance(void);
 
@@ -148,7 +148,7 @@ static const char *usb_strings[] = {
 /**
  * Serial is 96bit so 12bytes so 12 hexa numbers, or 24 decimal + termination character
  */
-inline char *get_dev_unique_id(char *s)
+static inline char *get_dev_unique_id(char *s)
 {
 	volatile uint8_t *unique_id = (volatile uint8_t *)0x1FFF7A10;
 
